@@ -18,7 +18,8 @@ export default function HomePage() {
                   ¡Encantado de conocerte! Soy un{" "}
                   <span>
                      desarrollador Full Stack con más de 30 años de experiencia
-                  </span>{" "}
+                  </span>
+                  {""}
                   en el mundo de la programación. Mi pasión es transformar ideas
                   en código y crear soluciones tecnológicas innovadoras y
                   robustas.
