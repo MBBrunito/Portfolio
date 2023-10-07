@@ -1,0 +1,14 @@
+.navContent {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(1, 1, 46);
+   padding: 0 1rem;
+   margin-bottom: 0.5rem;
+}
+
+.menuLinks {
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+}
