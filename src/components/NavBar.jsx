@@ -6,7 +6,7 @@ export default function NavBar() {
          <h2 className="">MarcosBrunoDev</h2>
          <div className="menuLinks">
             <Link href="/">Home Page</Link>
-            <Link href="/Projects">Projects</Link>
+            <Link href="/projects">Projects</Link>
          </div>
       </nav>
    );
