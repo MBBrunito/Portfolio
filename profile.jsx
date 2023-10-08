@@ -31,6 +31,46 @@ export const skills = [
       skill: "Sequelize",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/Sequelize_dtlwmv.png",
    },
+   {
+      skill: "WebPAck",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/WebPack_unmbix.png",
+   },
+   {
+      skill: "NodeJs",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728076/skills/NodeJs_u9nyul.png",
+   },
+   {
+      skill: "MySQL",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728075/skills/MySQL_wvnm8u.png",
+   },
+   {
+      skill: "Less",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728075/skills/Less_qjxuzw.png",
+   },
+   {
+      skill: "JQuery",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728062/skills/JQuery_wich4z.png",
+   },
+   {
+      skill: "Jest",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Jest_x9rdgo.png",
+   },
+   {
+      skill: "HTML5",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/HTML5_brzeey.png",
+   },
+   {
+      skill: "Git",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/Git_bn4s2i.png",
+   },
+   {
+      skill: "GitHub",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/GitHub_vbbt8j.png",
+   },
+   {
+      skill: "Insomnia",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Insomnia_wfsmd1.png",
+   },
 ];
 
 export const experiencies = [
