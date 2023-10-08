@@ -67,7 +67,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 6vw;
+   width: 30%;
    margin-bottom: 0.1vh;
    align-items: center;
    border: 1px white solid;
@@ -77,7 +77,7 @@
    border-radius: 0.5rem;
 }
 .skills img {
-   width: 3.5vw;
+   width: 70%;
 }
 .skills p {
    font-size: 1.1vw;
@@ -112,10 +112,32 @@
 }
 
 @media (max-width: 767px) {
+   .headContent {
+      flex-direction: column;
+      align-items: center;
+   }
+   .photo {
+      width: 30vw;
+   }
+   .headerContent {
+      font-size: 3vw;
+   }
    .dataCont {
       flex-direction: column-reverse;
    }
    .listSkills {
       width: 95vw;
+   }
+   .skills {
+      width: 15%;
+   }
+   .skills p {
+      font-size: 2vw;
+   }
+   .title {
+      font-size: 3vw;
+   }
+   .ulExp {
+      font-size: 2.8vw;
    }
 }
