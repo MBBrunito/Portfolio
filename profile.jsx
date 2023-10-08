@@ -71,6 +71,18 @@ export const skills = [
       skill: "Insomnia",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Insomnia_wfsmd1.png",
    },
+   {
+      skill: "Prisma",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/Prisma_cyk4g5.png",
+   },
+   {
+      skill: "CSS3",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/CSS3_vgt6ic.png",
+   },
+   {
+      skill: "VSCode",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696798510/skills/VSCode_egnfgt.png",
+   },
 ];
 
 export const experiencies = [

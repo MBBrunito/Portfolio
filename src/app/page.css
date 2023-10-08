@@ -38,7 +38,7 @@
 .headerContent span {
    color: skyblue;
 }
-.headerContent :link {
+.headerContent a {
    text-decoration: none;
    color: yellow;
 }
@@ -75,6 +75,10 @@
    padding-top: 0.5vh;
    background-color: rgb(44, 44, 44);
    border-radius: 0.5rem;
+}
+.skills:hover {
+   background-color: white;
+   color: black;
 }
 .skills img {
    width: 70%;

@@ -6,9 +6,28 @@
    padding: 0 1rem;
    margin-bottom: 0.5rem;
 }
+.linksNav {
+   text-decoration: none;
+}
+.linksNav h2 {
+   margin: 1vh;
+   font-size: 2vw;
+}
 
 .menuLinks {
    display: flex;
-   justify-content: space-between;
+   justify-content: right;
+   gap: 2vw;
    width: 50%;
+   font-size: 1.5vw;
+   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+   .linksNav h2 {
+      font-size: 3.5vw;
+   }
+   .menuLinks {
+      font-size: 3vw;
+   }
 }
