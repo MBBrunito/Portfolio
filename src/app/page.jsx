@@ -44,7 +44,7 @@ export default function HomePage() {
                   ))}
                </div>
             </div>
-            <div>
+            <div className="experienceContent">
                <h2 className="title">Experiencia</h2>
                <ul className="ulExp">
                   {experiencies.map(
@@ -52,8 +52,8 @@ export default function HomePage() {
                         <div key={index}>
                            <li>
                               <h3 className="titDesc">{title}</h3>
-                              <h5 className="titDesc">{date}</h5>
-                              <p className="titDesc">{description}</p>
+                              <h5 className="dateDesc">{date}</h5>
+                              <p className="detaDesc">{description}</p>
                               <ul>
                                  {items.map((item, index) => (
                                     <li key={index}>
