@@ -29,8 +29,8 @@ export default function HomePage() {
                   ¡Estoy emocionado por la oportunidad de colaborar contigo en
                   tu próximo proyecto! Si estás buscando un desarrollador Full
                   Stack apasionado y experimentado,{" "}
-                  <Link href="#">contáctame</Link> y hagamos algo grandioso
-                  juntos. 🚀
+                  <Link href="/contactme">contáctame</Link> y hagamos algo
+                  grandioso juntos. 🚀
                </h4>
             </div>
          </div>
