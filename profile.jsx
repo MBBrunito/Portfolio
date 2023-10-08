@@ -1,27 +1,35 @@
 export const skills = [
    {
       skill: "Javascript",
-      percentage: 100,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/JS_cznnif.png",
    },
    {
       skill: "React",
-      percentage: 90,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/React_r5xw2z.png",
    },
    {
       skill: "Redux",
-      percentage: 90,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/Redux_iuvliz.png",
    },
    {
       skill: "NextJS",
-      percentage: 75,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/NextJS_gedlt5.png",
    },
    {
       skill: "NestJS",
-      percentage: 90,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/NestJS_xpw6nz.png",
    },
    {
       skill: "SQL",
-      percentage: 100,
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/SQL_d1sljk.png",
+   },
+   {
+      skill: "PostgreSQL",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/PostgreSQL_j13y9l.png",
+   },
+   {
+      skill: "Sequelize",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/Sequelize_dtlwmv.png",
    },
 ];
 
