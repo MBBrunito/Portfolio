@@ -7,11 +7,13 @@ export default function HomePage() {
    return (
       <div className="generalCont">
          <div className="headContent">
-            <img
-               className="photoMe"
-               src="https://res.cloudinary.com/daoavxvau/image/upload/v1695691847/BrunoDev_gkcnto.png"
-               alt=""
-            />
+            <div className="photo">
+               <img
+                  className="photoMe"
+                  src="https://res.cloudinary.com/daoavxvau/image/upload/v1695691847/BrunoDev_gkcnto.png"
+                  alt=""
+               />
+            </div>
             <div className="headerContent">
                <h3>¡Hola, Soy Marcos Bruno! 👋</h3>
                <h4>
