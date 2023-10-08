@@ -46,33 +46,32 @@
    gap: 2rem;
 }
 .skillContent {
-   width: 30%;
-}
-.skills {
-   height: 6.5vh;
-   margin-bottom: 0.5rem;
-}
-
-.progress {
-   height: 7px;
-   border: 1px solid #428bca;
-   border-radius: 5px;
-   background-color: #e6f3fa;
-   margin-bottom: 1rem;
-}
-
-.progress-bar {
-   height: 100%;
-   background: #428bca;
    display: flex;
-   transition: width 0.25s;
-   border-radius: 0 5px 5x 0;
+   flex-direction: column;
+   width: 33%;
 }
 
-.progress-bar-text {
-   margin-left: 10px;
-   font-weight: bold;
-   color: #cce7f5;
+.listSkills {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+}
+
+.skills {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 0.5rem;
+   align-items: center;
+   border: 1px white solid;
+   line-height: 0;
+   padding-top: 0.5rem;
+   background-color: rgb(44, 44, 44);
+   border-radius: 0.5rem;
+}
+.skills img {
+   width: 5rem;
+   margin: 0 1rem;
 }
 
 .title {

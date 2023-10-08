@@ -18,8 +18,7 @@ export default function HomePage() {
                   ¡Encantado de conocerte! Soy un{" "}
                   <span>
                      desarrollador Full Stack con más de 30 años de experiencia
-                  </span>
-                  {""}
+                  </span>{" "}
                   en el mundo de la programación. Mi pasión es transformar ideas
                   en código y crear soluciones tecnológicas innovadoras y
                   robustas.
@@ -36,17 +35,14 @@ export default function HomePage() {
          <div className="dataCont">
             <div className="skillContent">
                <h2 className="title">Habilidades</h2>
-               {skills.map(({ skill, percentage }, index) => (
-                  <div key={index} className="skills">
-                     <span className="progress-bar-text">{skill}</span>
-                     <div className="progress">
-                        <div
-                           className="progress-bar"
-                           style={{ width: `${percentage}%` }}
-                        ></div>
+               <div className="listSkills">
+                  {skills.map(({ skill, logo }, index) => (
+                     <div key={index} className="skills">
+                        <img src={logo} alt="" />
+                        <p>{skill}</p>
                      </div>
-                  </div>
-               ))}
+                  ))}
+               </div>
             </div>
             <div>
                <h2 className="title">Experiencia</h2>
@@ -76,3 +72,4 @@ export default function HomePage() {
       </div>
    );
 }
+// {new Date().getFullYear() - 1991}
