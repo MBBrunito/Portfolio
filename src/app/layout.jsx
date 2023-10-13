@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
                   <div>
                      <h3>&copy; MarcosBrunoDev</h3>
                      <p>2023 - {new Date().getFullYear()}</p>
-                     <p>All righth Reserved.</p>
+                     <p>All rights Reserved.</p>
                   </div>
                </div>
             </footer>
