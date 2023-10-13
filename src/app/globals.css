@@ -6,12 +6,13 @@ body {
 
 .footer {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    text-align: center;
    margin-top: 0.5rem;
    background-color: black;
    padding: 0.5rem;
+   font-size: 1.5vw;
 }
 .footer img {
    width: 8vw;
@@ -21,4 +22,13 @@ body {
 }
 footer p {
    margin: 0;
+}
+.redes {
+   display: flex;
+}
+
+@media (max-width: 767px) {
+   .footer {
+      font-size: 2vw;
+   }
 }

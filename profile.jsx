@@ -1,7 +1,23 @@
 export const skills = [
    {
+      skill: "Programación",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208309/skills/Programacion_w3q5dt.png",
+   },
+   {
+      skill: "Lógica",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208309/skills/Logica_vhifoq.png",
+   },
+   {
       skill: "Javascript",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/JS_cznnif.png",
+   },
+   {
+      skill: "NodeJs",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728076/skills/NodeJs_u9nyul.png",
+   },
+   {
+      skill: "JQuery",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728062/skills/JQuery_wich4z.png",
    },
    {
       skill: "React",
@@ -20,6 +36,14 @@ export const skills = [
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/NestJS_xpw6nz.png",
    },
    {
+      skill: "WebPAck",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/WebPack_unmbix.png",
+   },
+   {
+      skill: "Jest",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Jest_x9rdgo.png",
+   },
+   {
       skill: "SQL",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/SQL_d1sljk.png",
    },
@@ -28,36 +52,40 @@ export const skills = [
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/PostgreSQL_j13y9l.png",
    },
    {
+      skill: "Insomnia",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Insomnia_wfsmd1.png",
+   },
+   {
       skill: "Sequelize",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/Sequelize_dtlwmv.png",
-   },
-   {
-      skill: "WebPAck",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728090/skills/WebPack_unmbix.png",
-   },
-   {
-      skill: "NodeJs",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728076/skills/NodeJs_u9nyul.png",
    },
    {
       skill: "MySQL",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728075/skills/MySQL_wvnm8u.png",
    },
    {
-      skill: "Less",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728075/skills/Less_qjxuzw.png",
-   },
-   {
-      skill: "JQuery",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728062/skills/JQuery_wich4z.png",
-   },
-   {
-      skill: "Jest",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Jest_x9rdgo.png",
+      skill: "Prisma",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/Prisma_cyk4g5.png",
    },
    {
       skill: "HTML5",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/HTML5_brzeey.png",
+   },
+   {
+      skill: "CSS3",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/CSS3_vgt6ic.png",
+   },
+   {
+      skill: "Less",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728075/skills/Less_qjxuzw.png",
+   },
+   {
+      skill: "BootStrap",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208309/skills/Bootstrap_qyglc3.png",
+   },
+   {
+      skill: "Tailwind",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208309/skills/Tailwind_jo9l93.png",
    },
    {
       skill: "Git",
@@ -66,18 +94,6 @@ export const skills = [
    {
       skill: "GitHub",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/GitHub_vbbt8j.png",
-   },
-   {
-      skill: "Insomnia",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728061/skills/Insomnia_wfsmd1.png",
-   },
-   {
-      skill: "Prisma",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726039/skills/Prisma_cyk4g5.png",
-   },
-   {
-      skill: "CSS3",
-      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696726038/skills/CSS3_vgt6ic.png",
    },
    {
       skill: "VSCode",
@@ -113,6 +129,18 @@ export const projects = [
       description:
          "Desarrollamos y entregamos exitosamente un sistema integral para el Club ADIP, que incluye una plataforma de administración con funciones de control de usuarios, gestión de noticias y categorías, y un sistema de pagos. Esta solución mejoró la eficiencia de la organización al facilitar la gestión de contenidos, el acceso de usuarios y la recopilación de pagos, contribuyendo así a su misión y objetivos.",
       date: "08/2023 - 09/2023",
-      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1696983976/skills/AdipWeb_ffcltz.jpg",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208907/Proyectos/AdipWeb_tz1i9n.jpg",
+   },
+];
+export const contact = [
+   {
+      red: "LinkedIn",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208981/Redes%20Sociales/LinkedIn_n4x9si.png",
+      contact: "https://www.linkedin.com/in/mbbrunito/",
+   },
+   {
+      red: "Gmail",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208981/Redes%20Sociales/gMail_ndgy3f.png",
+      contact: "MarcosBrunoDev@gmail.com",
    },
 ];

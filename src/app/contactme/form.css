@@ -1,0 +1,19 @@
+.formContent {
+   display: flex;
+   justify-content: center;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50vw;
+}
+
+.formInput {
+   width: 100%;
+}
+
+.formMessage {
+   width: 100%;
+}
