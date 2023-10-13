@@ -2,11 +2,12 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: rgb(1, 1, 46);
+   background-color: black;
    padding: 0 1rem;
    margin-bottom: 0.5rem;
 }
 .linksNav {
+   color: dodgerblue;
    text-decoration: none;
 }
 .linksNav h2 {

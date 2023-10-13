@@ -7,8 +7,8 @@ export default function NavBar() {
             <h2>MarcosBrunoDev</h2>
          </Link>
          <div className="menuLinks">
-            <Link href="/projects" className="linksNav">
-               Projects
+            <Link href="/portfolio" className="linksNav">
+               Portfolio
             </Link>
             <Link href="/contactme" className="linksNav">
                Contact me

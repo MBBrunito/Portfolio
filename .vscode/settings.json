@@ -1,0 +1,20 @@
+{
+   "editor.formatOnPaste": true,
+   "editor.formatOnSave": true,
+   "editor.minimap.enabled": false,
+   "editor.minimap.autohide": true,
+   "workbench.layoutControl.enabled": true,
+   "workbench.activityBar.iconClickBehavior": "toggle",
+   "workbench.activityBar.visible": false,
+   "workbench.colorTheme": "Default Dark+",
+   "workbench.editor.decorations.colors": true,
+   "workbench.preferredDarkColorTheme": "Default Dark+",
+   "workbench.sideBar.location": "left",
+   "workbench.statusBar.visible": true,
+   "workbench.tips.enabled": true,
+   "breadcrumbs.enabled": true,
+   "zenMode.hideActivityBar": true,
+   "zenMode.hideLineNumbers": true,
+   "editor.codeActionsOnSave": {},
+   "editor.indentSize": "tabSize"
+}

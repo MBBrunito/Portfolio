@@ -3,3 +3,22 @@ body {
    padding: 0;
    color: silver;
 }
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 0.5rem;
+   background-color: black;
+   padding: 0.5rem;
+}
+.footer img {
+   width: 8vw;
+}
+.footer h3 {
+   margin: 0;
+}
+footer p {
+   margin: 0;
+}

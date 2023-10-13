@@ -107,3 +107,12 @@ export const experiencies = [
       ],
    },
 ];
+export const projects = [
+   {
+      name: "Proyecto ADIP WEB",
+      description:
+         "Desarrollamos y entregamos exitosamente un sistema integral para el Club ADIP, que incluye una plataforma de administración con funciones de control de usuarios, gestión de noticias y categorías, y un sistema de pagos. Esta solución mejoró la eficiencia de la organización al facilitar la gestión de contenidos, el acceso de usuarios y la recopilación de pagos, contribuyendo así a su misión y objetivos.",
+      date: "08/2023 - 09/2023",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1696983976/skills/AdipWeb_ffcltz.jpg",
+   },
+];
