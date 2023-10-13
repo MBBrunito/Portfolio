@@ -3,6 +3,8 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Favicon from "./favicon.ico";
+import { contact } from "../../profile";
+import Link from "next/link";
 
 // const inter = Inter({ subsets: ["latin"] });
 const generalFont = Figtree({
@@ -42,6 +44,15 @@ export default function RootLayout({ children }) {
                      <h3>&copy; MarcosBrunoDev</h3>
                      <p>2023 - {new Date().getFullYear()}</p>
                      <p>All rights Reserved.</p>
+                  </div>
+                  <div className="redes">
+                     {contact.map((cont, index) => (
+                        <div key={index}>
+                           <Link href={cont.contact} target="_blank">
+                              <img src={cont.logo} alt="" />
+                           </Link>
+                        </div>
+                     ))}
                   </div>
                </div>
             </footer>
