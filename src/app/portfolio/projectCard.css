@@ -1,0 +1,33 @@
+.card {
+   display: flex;
+   justify-content: center;
+}
+
+.cardContent {
+   display: flex;
+   width: 90vw;
+   border: 1px white solid;
+   border-radius: 1vw;
+   padding: 1vw;
+   gap: 1vw;
+}
+
+.photoCont {
+   width: 50vw;
+   /* overflow: hidden; */
+}
+
+.photoProj {
+   max-width: 90%;
+}
+
+.descProj {
+   font-size: 1.5vw;
+   text-align: justify;
+}
+.descProj h3 {
+   margin: 0;
+}
+.descProj span {
+   font-style: italic;
+}
