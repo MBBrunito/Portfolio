@@ -1,19 +1,102 @@
 .formContent {
    display: flex;
    justify-content: center;
+   align-items: center;
+}
+
+.formInvite {
+   width: 60vw;
+   padding: 0 1vw 0 3vw;
+}
+.formInvite h3 {
+   font-size: 1.5vw;
+}
+.formInvite p {
+   font-size: 1.3vw;
+}
+.formInvite ul li {
+   font-size: 1.3vw;
+}
+.formInvite h4 {
+   font-size: 1.3vw;
+   font-style: italic;
 }
 
 .form {
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
-   width: 50vw;
+   width: 40vw;
+}
+
+.inputs {
+   width: 36vw;
+   text-align: center;
 }
 
 .formInput {
-   width: 100%;
+   font-size: 1.3vw;
+   color: white;
+   width: 35vw;
+   height: 3.5vh;
+   margin-bottom: 0.5vh;
 }
 
 .formMessage {
-   width: 100%;
+   font-size: 1.3vw;
+   color: white;
+   resize: none;
+   width: 35vw;
+   height: 20vh;
+   margin-bottom: 1vh;
+}
+
+.formbuttom {
+   padding: 1vh 2vw 1vh 2vw;
+}
+.formAlert {
+   font-size: 1vw;
+   margin: 0;
+   color: red;
+}
+
+@media (max-width: 767px) {
+   .formContent {
+      flex-direction: column;
+   }
+   .formInvite {
+      width: 90vw;
+   }
+   .formInvite h3 {
+      font-size: 3vw;
+   }
+   .formInvite p {
+      font-size: 2.8vw;
+   }
+   .formInvite ul li {
+   font-size: 2.8vw;
+   }
+   .formInvite h4 {
+      font-size: 2.8vw;
+   }
+   .form {
+      width: 90vw;
+   }
+   .inputs {
+      width: 85vw;
+   }
+   .formInput {
+   font-size: 2.8vw;
+   width: 80vw;
+   height: 3.5vh;
+   }
+   .formMessage {
+   font-size: 2.8vw;
+   width: 80vw;
+   height: 20vh;
+   }
+   .formAlert {
+      font-size: 2vw;
+   }
 }

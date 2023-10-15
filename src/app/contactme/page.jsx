@@ -1,33 +1,137 @@
+"use client";
 import "./form.css";
+import emailjs from "@emailjs/browser";
+import Validation from "./validaton";
+import { useEffect, useState } from "react";
 
-export default function ContactMe() {
+export default function ContactMe(props) {
+   const [user, setUser] = useState({
+      user_name: "",
+      user_email: "",
+      user_message: "",
+   });
+   const [errors, setErrors] = useState({
+      user_name: "",
+      user_email: "",
+      user_message: "",
+   });
+
+   const [touched, setTouched] = useState({
+      user_name: false,
+      user_email: false,
+      user_message: false,
+   });
+
+   useEffect(() => {
+      Validation(user, setErrors);
+   }, [user]);
+
+   const handleChange = (event) => {
+      const { name, value } = event.target;
+
+      setUser((prevUser) => ({
+         ...prevUser,
+         [name]: value,
+      }));
+
+      // Marcar el campo como tocado
+      setTouched((prevTouched) => ({
+         ...prevTouched,
+         [name]: true,
+      }));
+   };
+
+   const sendEmail = (event) => {
+      event.preventDefault();
+      console.log(errors);
+
+      if (!errors.user_name && !errors.user_email && !errors.user_message) {
+         emailjs
+            .sendForm(
+               "service_hdgpszk",
+               "template_vv8fvxg",
+               event.target,
+               "PzsnAQNS4YBVR1tcE"
+            )
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error));
+      } else {
+         console.log("Hay errores en el formulario.");
+      }
+   };
+
    return (
       <div className="formContent">
-         <form action="#" className="form">
-            <div>
+         <div className="formInvite">
+            <h3>¡Hablemos de Tu Próximo Proyecto!</h3>
+            <p>
+               Estoy emocionado por la posibilidad de trabajar contigo y hacer
+               realidad tus ideas. Si tienes un proyecto en mente, una consulta
+               técnica o simplemente quieres charlar sobre el fascinante mundo
+               del desarrollo web, ¡estaré encantado de escucharte!
+            </p>
+            <p>
+               Mi objetivo es crear soluciones tecnológicas que no solo sean
+               funcionales sino también inspiradoras. Ya sea que estés buscando
+               desarrollar una aplicación web innovadora, mejorar tu presencia
+               en línea o aprender más sobre las últimas tecnologías, estoy aquí
+               para ayudarte en cada paso del camino.
+            </p>
+            <h3>¿Cómo Puedo Ayudarte?</h3>
+            <ul>
+               <li>Desarrollo Web Frontend y Backend</li>
+               <li>Diseño y Desarrollo de Aplicaciones Web Interactivas</li>
+               <li>Consultas sobre Tecnologías y Mejores Prácticas</li>
+               <li>Colaboraciones Creativas y Proyectos Innovadores</li>
+            </ul>
+            <p>
+               No dudes en completar el formulario de contacto a continuación o
+               escribirme directamente a{" "}
+               <a href="mailto:MarcosBrunoDev@gmail.com" target="_blank">
+                  MarcosBrunoDev@gmail.com
+               </a>
+               . Estoy ansioso por escuchar tus ideas y trabajar juntos para
+               hacerlas realidad.
+            </p>
+            <h4>¡Espero saber pronto de ti!</h4>
+         </div>
+         <form action="" className="form" onSubmit={sendEmail}>
+            <div className="inputs">
                <input
                   type="text"
                   placeholder="Nombre Completo"
-                  id="names"
-                  name="names"
+                  id="name"
+                  name="user_name"
                   className="formInput"
+                  value={user.user_name}
+                  onChange={handleChange}
                />
                <input
                   type="text"
                   placeholder="Correo Electrónico"
                   id="email"
-                  name="email"
+                  name="user_email"
                   className="formInput"
+                  value={user.user_email}
+                  onChange={handleChange}
                />
             </div>
             <textarea
-               name="comment"
-               id="comment"
-               rows="10"
+               name="user_message"
+               id="message"
                placeholder="Escriba aquí su mensaje"
                className="formMessage"
+               value={user.user_message}
+               onChange={handleChange}
             ></textarea>
-            <button className="formbuttom">Submit</button>
+            <button className="formbuttom">Enviar</button>
+            <p className="formAlert">{touched.user_name && errors.user_name}</p>
+            <p className="formAlert">
+               {touched.user_email && errors.user_email}
+            </p>
+            <p className="formAlert">
+               {touched.user_message && errors.user_message}
+            </p>
          </form>
       </div>
    );
