@@ -7,7 +7,6 @@ body {
 .footer {
    display: flex;
    justify-content: space-between;
-   align-items: center;
    text-align: center;
    margin-top: 0.5rem;
    background-color: black;
@@ -25,7 +24,7 @@ footer p {
 }
 .redes {
    width: 9vw;
-   height: 15vh;
+   height: 12vh;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
@@ -54,7 +53,7 @@ footer p {
    }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 425px) and (max-width: 767px) {
    .footer {
       font-size: 2.5vw;
    }
@@ -67,5 +66,10 @@ footer p {
    }
    .redes img {
       width: 8vw;
+   }
+}
+@media screen and (min-width: 1440px) {
+   .redes {
+      height: 14.5vh;
    }
 }
