@@ -68,8 +68,15 @@ footer p {
       width: 8vw;
    }
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+   .redes {
+      height: 13vh;
+   }
+}
+
 @media screen and (min-width: 1440px) {
    .redes {
-      height: 14.5vh;
+      height: 18vh;
    }
 }
