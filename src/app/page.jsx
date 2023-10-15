@@ -11,7 +11,8 @@ export default function HomePage() {
                <img
                   className="photoMe"
                   src="https://res.cloudinary.com/daoavxvau/image/upload/v1695691847/BrunoDev_gkcnto.png"
-                  alt=""
+                  alt="Marcos Bruno Barrancos"
+                  title="Marcos Bruno Barrancos"
                />
             </div>
             <div className="headerContent">
@@ -38,9 +39,9 @@ export default function HomePage() {
             <div className="skillContent">
                <h2 className="title">Habilidades</h2>
                <div className="listSkills">
-                  {skills.map(({ skill, logo }, index) => (
+                  {skills.map(({ skill, logo, description }, index) => (
                      <div key={index} className="skills">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt={skill} title={description} />
                         <p>{skill}</p>
                      </div>
                   ))}
@@ -51,7 +52,7 @@ export default function HomePage() {
                <ul className="ulExp">
                   {experiencies.map(
                      ({ title, date, description, items }, index) => (
-                        <div key={index}>
+                        <div key={index} title={title + date}>
                            <li>
                               <h3 className="titDesc">{title}</h3>
                               <h5 className="dateDesc">{date}</h5>

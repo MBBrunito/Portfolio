@@ -3,6 +3,7 @@ import "./form.css";
 import emailjs from "@emailjs/browser";
 import Validation from "./validaton";
 import { useEffect, useState } from "react";
+import CustomAlert from "@/components/CustomAlert";
 
 export default function ContactMe(props) {
    const [user, setUser] = useState({
@@ -21,6 +22,12 @@ export default function ContactMe(props) {
       user_email: false,
       user_message: false,
    });
+
+   const [showAlert, setShowAlert] = useState(false);
+
+   const handleAlertClose = () => {
+      setShowAlert(false);
+   };
 
    useEffect(() => {
       Validation(user, setErrors);
@@ -43,7 +50,6 @@ export default function ContactMe(props) {
 
    const sendEmail = (event) => {
       event.preventDefault();
-      console.log(errors);
 
       if (!errors.user_name && !errors.user_email && !errors.user_message) {
          emailjs
@@ -56,7 +62,7 @@ export default function ContactMe(props) {
             .then((response) => console.log(response))
             .catch((error) => console.log(error));
       } else {
-         console.log("Hay errores en el formulario.");
+         console.log("Datos incompletos");
       }
    };
 
@@ -87,7 +93,11 @@ export default function ContactMe(props) {
             <p>
                No dudes en completar el formulario de contacto a continuación o
                escribirme directamente a{" "}
-               <a href="mailto:MarcosBrunoDev@gmail.com" target="_blank">
+               <a
+                  href="mailto:MarcosBrunoDev@gmail.com"
+                  target="_blank"
+                  title="Click para enviar un email"
+               >
                   MarcosBrunoDev@gmail.com
                </a>
                . Estoy ansioso por escuchar tus ideas y trabajar juntos para
@@ -105,6 +115,7 @@ export default function ContactMe(props) {
                   className="formInput"
                   value={user.user_name}
                   onChange={handleChange}
+                  title="Ingresa tu nombre completo"
                />
                <input
                   type="text"
@@ -114,6 +125,7 @@ export default function ContactMe(props) {
                   className="formInput"
                   value={user.user_email}
                   onChange={handleChange}
+                  title="Ingresa tu dirección de email"
                />
             </div>
             <textarea
@@ -123,8 +135,21 @@ export default function ContactMe(props) {
                className="formMessage"
                value={user.user_message}
                onChange={handleChange}
+               title="Escríbeme un mensaje, te responderé a la brevedad posible"
             ></textarea>
-            <button className="formbuttom">Enviar</button>
+            <button
+               className="formbuttom"
+               title="Click para enviar tu mensaje"
+               onClick={() => setShowAlert(true)}
+            >
+               Enviar
+            </button>
+            {showAlert && (
+               <CustomAlert
+                  message="Por favor verifica que los datos del formulario sean correctos"
+                  onClose={handleAlertClose}
+               />
+            )}
             <p className="formAlert">{touched.user_name && errors.user_name}</p>
             <p className="formAlert">
                {touched.user_email && errors.user_email}
