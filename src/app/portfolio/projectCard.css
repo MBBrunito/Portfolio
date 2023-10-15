@@ -31,3 +31,13 @@
 .descProj span {
    font-style: italic;
 }
+
+@media (max-width: 767px) {
+   .cardContent {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   .descProj {
+      font-size: 2.5vw;
+   }
+}

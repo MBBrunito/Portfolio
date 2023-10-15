@@ -24,11 +24,48 @@ footer p {
    margin: 0;
 }
 .redes {
+   width: 9vw;
+   height: 15vh;
    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: end;
+}
+.redes img {
+   width: 4vw;
+   background-color: dimgray;
+   border-radius: 0.5vw;
+   margin-left: 0.5vw;
+}
+
+@media (max-width: 424px) {
+   .footer {
+      font-size: 2.5vw;
+   }
+   .footer img {
+      width: 15vw;
+   }
+   .redes {
+      width: 15vw;
+      height: 10vh;
+   }
+   .redes img {
+      width: 7vw;
+   }
 }
 
 @media (max-width: 767px) {
    .footer {
-      font-size: 2vw;
+      font-size: 2.5vw;
+   }
+   .footer img {
+      width: 17vw;
+   }
+   .redes {
+      width: 17vw;
+      height: 13vh;
+   }
+   .redes img {
+      width: 8vw;
    }
 }
