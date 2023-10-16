@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import Favicon from "./favicon.ico";
 import Footer from "@/components/Footer";
+import ReactGA from "react-ga";
 
 // const inter = Inter({ subsets: ["latin"] });
 const generalFont = Figtree({
@@ -25,6 +26,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+   ReactGA.initialize("TU_ID_DE_ANALYTICS");
+   ReactGA.pageview(window.location.pathname + window.location.search);
    return (
       <html lang="en">
          <body className={generalFont.className}>
