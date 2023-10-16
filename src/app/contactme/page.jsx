@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactMe(props) {
    const captcha = useRef(null);
-   let captchaOk = false;
+   const [captchaOk, setCaptchaOk] = useState(false);
    const [user, setUser] = useState({
       user_name: "",
       user_email: "",
@@ -27,9 +27,11 @@ export default function ContactMe(props) {
    });
 
    const [showAlert, setShowAlert] = useState(false);
+   const [showSend, setShowSend] = useState(false);
 
    const handleAlertClose = () => {
       setShowAlert(false);
+      setShowSend(false);
    };
 
    useEffect(() => {
@@ -52,19 +54,30 @@ export default function ContactMe(props) {
    };
 
    const onChange = () => {
-      console.log(captcha.current.getValues());
-      if (captcha.current.getValues()) captchaOk = true;
-      else captchaOk = false;
+      console.log(captcha.current);
+      if (captcha.current) {
+         console.log("entró");
+         if (captcha.current) {
+            setCaptchaOk(true);
+         } else {
+            setCaptchaOk(false);
+         }
+         console.log(captchaOk);
+      } else {
+         console.error(
+            "Error: captcha.current no está definido correctamente."
+         );
+      }
    };
 
    const sendEmail = (event) => {
       event.preventDefault();
 
       if (
+         captchaOk &&
          !errors.user_name &&
          !errors.user_email &&
-         !errors.user_message &&
-         captchaOk
+         !errors.user_message
       ) {
          emailjs
             .sendForm(
@@ -73,10 +86,19 @@ export default function ContactMe(props) {
                event.target,
                "PzsnAQNS4YBVR1tcE"
             )
-            .then((response) => console.log(response))
-            .catch((error) => console.log(error));
+            .then((response) => {
+               console.log(response);
+               setShowAlert(false);
+               setShowSend(true);
+            })
+            .catch((error) => {
+               console.log(error);
+               setShowAlert(true);
+               setShowSend(false);
+            });
       } else {
-         console.log("Datos incompletos");
+         setShowAlert(true);
+         setShowSend(false);
       }
    };
 
@@ -152,19 +174,27 @@ export default function ContactMe(props) {
                title="Escríbeme un mensaje, te responderé a la brevedad posible"
             ></textarea>
             <ReCAPTCHA
+               ref={captcha}
                sitekey="6Lf3NqgoAAAAAPI_n3SBmqXB2ICM0U_OZHOBvGWN"
+               // sitekey="6Ld3OagoAAAAAImXuI2I4WW2qr8WGJ5tPiznvDLI"
                onChange={onChange}
             />
             <button
                className="formbuttom"
                title="Click para enviar tu mensaje"
-               onClick={() => setShowAlert(true)}
+               type="submit"
             >
                Enviar
             </button>
             {showAlert && (
                <CustomAlert
                   message="Por favor verifica que los datos del formulario sean correctos"
+                  onClose={handleAlertClose}
+               />
+            )}
+            {showSend && (
+               <CustomAlert
+                  message="El mensaje fue enviado correctamente"
                   onClose={handleAlertClose}
                />
             )}
