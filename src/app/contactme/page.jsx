@@ -152,7 +152,7 @@ export default function ContactMe(props) {
                title="Escríbeme un mensaje, te responderé a la brevedad posible"
             ></textarea>
             <ReCAPTCHA
-               sitekey="6LdmuKcoAAAAAKZ6ywiqJ2PYum2I7hbmWXdEbBAR"
+               sitekey="6Lf3NqgoAAAAAPI_n3SBmqXB2ICM0U_OZHOBvGWN"
                onChange={onChange}
             />
             <button
