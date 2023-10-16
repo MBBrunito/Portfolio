@@ -101,10 +101,22 @@ export const skills = [
          "ORM moderno y tipo seguro para bases de datos SQL, diseñado para facilitar la escritura de consultas seguras y mantenibles en TypeScript y JavaScript.",
    },
    {
+      skill: "Cloudinary",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1695613159/samples/cloudinary-icon.png",
+      description:
+         "Un servicio de gestión de archivos en la nube que proporciona almacenamiento y manipulación de imágenes y videos para aplicaciones web y móviles.",
+   },
+   {
       skill: "HTML5",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/HTML5_brzeey.png",
       description:
          "La última versión del lenguaje de marcado estándar utilizado para crear páginas web y aplicaciones web.",
+   },
+   {
+      skill: "WordPress",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697473316/skills/WordPress_nkyezy.png",
+      description:
+         "WordPress es un sistema de gestión de contenido (CMS) de código abierto ampliamente utilizado para crear sitios web, blogs y aplicaciones. Es conocido por su facilidad de uso, flexibilidad y una amplia variedad de plugins y temas que permiten a los usuarios personalizar sus sitios según sus necesidades. WordPress es una opción popular para sitios web de todo tipo, desde blogs personales hasta sitios web de empresas y comercio electrónico.",
    },
    {
       skill: "CSS3",
