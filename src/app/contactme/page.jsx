@@ -2,10 +2,13 @@
 import "./form.css";
 import emailjs from "@emailjs/browser";
 import Validation from "./validaton";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import CustomAlert from "@/components/CustomAlert";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactMe(props) {
+   const captcha = useRef(null);
+   let captchaOk = false;
    const [user, setUser] = useState({
       user_name: "",
       user_email: "",
@@ -48,10 +51,21 @@ export default function ContactMe(props) {
       }));
    };
 
+   const onChange = () => {
+      console.log(captcha.current.getValues());
+      if (captcha.current.getValues()) captchaOk = true;
+      else captchaOk = false;
+   };
+
    const sendEmail = (event) => {
       event.preventDefault();
 
-      if (!errors.user_name && !errors.user_email && !errors.user_message) {
+      if (
+         !errors.user_name &&
+         !errors.user_email &&
+         !errors.user_message &&
+         captchaOk
+      ) {
          emailjs
             .sendForm(
                "service_hdgpszk",
@@ -137,6 +151,10 @@ export default function ContactMe(props) {
                onChange={handleChange}
                title="Escríbeme un mensaje, te responderé a la brevedad posible"
             ></textarea>
+            <ReCAPTCHA
+               sitekey="6LdmuKcoAAAAAKZ6ywiqJ2PYum2I7hbmWXdEbBAR"
+               onChange={onChange}
+            />
             <button
                className="formbuttom"
                title="Click para enviar tu mensaje"
