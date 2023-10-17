@@ -54,15 +54,12 @@ export default function ContactMe(props) {
    };
 
    const onChange = () => {
-      console.log(captcha.current);
       if (captcha.current) {
-         console.log("entró");
          if (captcha.current) {
             setCaptchaOk(true);
          } else {
             setCaptchaOk(false);
          }
-         console.log(captchaOk);
       } else {
          console.error(
             "Error: captcha.current no está definido correctamente."
@@ -87,12 +84,12 @@ export default function ContactMe(props) {
                "PzsnAQNS4YBVR1tcE"
             )
             .then((response) => {
-               console.log(response);
+               // console.log(response);
                setShowAlert(false);
                setShowSend(true);
             })
             .catch((error) => {
-               console.log(error);
+               // console.log(error);
                setShowAlert(true);
                setShowSend(false);
             });
