@@ -182,6 +182,126 @@ export const experiencies = [
          "Proponer ideas para la mejora de los procesos del Bootcamp.",
       ],
    },
+   {
+      title: "Desarrollador Freelance / PreViSeg (Empresa de Seguridad Privada)",
+      date: "MAY.2012 – OCT.2012",
+      description: "Desarrollo de sistema en FoxPro + dBase3",
+      items: [
+         "Diseñó e implementó un Sistema de Control para Base de PreViSeg, abarcando el seguimiento del personal y horarios de trabajo.",
+         "Creó diseños e impresiones de libros y formularios necesarios para la Empresa.",
+      ],
+   },
+   {
+      title: "Instructor de Computación / Instituto Del Rey",
+      date: "FEB.2005 – DIC.2006",
+      description: "Dictado de clases Presenciales",
+      items: [
+         "Impartió cursos de Operador de PC, Diseño Gráfico, Diseño de Páginas Web (HTML), Tango Gestión, AutoCad 2000 y Programación.",
+         "Dictó cursos de Armado, Reparación y Mantenimiento de PCs.",
+      ],
+   },
+   {
+      title: "Desarrollador Freelance / Empresa EDISON",
+      date: "MAR.2000 – AGO.2000",
+      description: "Sistema Administrativo a Medida",
+      items: [
+         "Desempeñó funciones administrativas y desarrolló un sistema a medida para la empresa, cubriendo áreas como facturación, control de stock, control bancario y contabilidad.",
+      ],
+   },
+   {
+      title: "Técnico / Mouse Computación S.R.L. y HVA",
+      date: "MAY.1997 – AGO.1997",
+      description: "Tareas varias",
+      items: [
+         "Armado y mantenimiento de equipos.",
+         "Vendedor de mostrador, diseñador gráfico y programador.",
+         "Instalaciones de redes.",
+         "Participación como instructor en el programa “Computadoras” para enseñanza de operación y técnico de PC, realizado por el propio comercio y transmitido por Canal 4.",
+      ],
+   },
+   {
+      title: "Desarrollador Freelance / Martesa Tours (Empresa de Turismo)",
+      date: "JUL.1996 – JUN.1998",
+      description: "Sistema Personalizado",
+      items: [
+         "Desarrolló un Sistema de Venta de Pasajes, control de Stock, administración, contable y varias funciones adicionales.",
+         "Realizó el mantenimiento de la red y equipos.",
+         "Asistente en la actualización de datos y capacitación del personal.",
+      ],
+   },
+   {
+      title: "Mantenimiento de PCs y Red / Distribuidora Benicio de Revistas",
+      date: "OCT.1995 – MAR.1997",
+      description: "Servicios Freelance",
+      items: [
+         "Mantenimiento de PCs, impresoras y red en Distribuidora Benicio de Revistas.",
+         "Instalación de nuevos nodos y actualización de Red Novell 2.10 a 3.11.",
+         "Capacitación del personal.",
+      ],
+   },
+   {
+      title: "Asistente en Programación y Mantenimiento / El Tribuno de Jujuy con Ing. Becalli",
+      date: "JUL.1995 – DIC.1997",
+      description: "Servicios Freelance",
+      items: [
+         "Colaboró en la programación y mantenimiento de sistemas y redes para El Tribuno de Jujuy bajo la supervisión del Ing. Becalli.",
+         "Mantuvo equipos en el área de redacción y publicidad.",
+         "Realizó la instalación de nuevos equipos y la carga de software de diseño en equipos de publicidad.",
+         "Facilitó la capacitación del personal.",
+      ],
+   },
+   {
+      title: "Trabajos Informáticos / Ministerio de Educación (Jujuy)",
+      date: "JUN.1995 – DIC.1997",
+      description: "Servicios Freelance",
+      items: [
+         "Lideró proyectos de diseño gráfico.",
+         "Colaboró con el Ing. Becalli en el diseño de un sistema para la carga de encuestas, la gestión de su carga y la observación de resultados.",
+         "Desempeñó funciones de mantenimiento de equipos.",
+      ],
+   },
+   {
+      title: "Tareas Administrativas / Ducci Construcciones S.R.L.",
+      date: "FEB.1995 – JUN.1995",
+      description: "Administrativo Informático",
+      items: [
+         "Desempeñó funciones administrativas en Ducci Construcciones S.R.L.",
+         "Colaboró como ayudante del CPN Pomares.",
+         "Implementó un sistema a medida para la gestión de IVA.",
+         "Realizó labores de mantenimiento de equipos.",
+      ],
+   },
+   {
+      title: "Sistema Administrativo / Puesto de Salud Castañeda",
+      date: "MAY.1993 – DIC.1994",
+      description: "Servicios Ad Honorem",
+      items: [
+         "Desarrolló ad honorem un sistema administrativo personalizado para el Puesto de Salud Castañeda.",
+         "Realizó tareas de mantenimiento y actualización de equipos informáticos.",
+         "Impartió capacitación al personal de manera voluntaria en el uso efectivo del nuevo sistema.",
+      ],
+   },
+   {
+      title: "Sistema Multiempresa de IVA / CPN Cruz",
+      date: "MAY.1993 – NOV.1995",
+      description: "Servicios Particulares",
+      items: [
+         "Diseñó y desarrolló un sistema multiempresa de IVA para CPN Cruz, abarcando el mantenimiento y la optimización del mismo.",
+         "Implementó un sistema de facturación personalizado para clientes de CPN Cruz.",
+         "Realizó tareas de mantenimiento en equipos e impresoras.",
+         "Diseñó diversos formularios para mejorar la eficiencia operativa.",
+      ],
+   },
+   {
+      title: "Sistema de Facturación y Stock / Fábrica de Plásticos Jujuy",
+      date: "FEB.1993 – SET.1993",
+      description: "Primer Sistema Freelance",
+      items: [
+         "Desarrolló un sistema integral de facturación y gestión de inventario para la Fábrica de Plásticos Jujuy.",
+         "Contribuyó al funcionamiento eficiente de la fábrica mediante la implementación de soluciones personalizadas.",
+         "Realizó tareas de mantenimiento para garantizar la operación continua del sistema.",
+      ],
+   },
 ];
 export const projects = [
    {

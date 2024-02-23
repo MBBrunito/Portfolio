@@ -10,12 +10,12 @@
    display: flex;
    border: gray solid 2px;
    border-radius: 1rem;
-   padding: 2vw;
+   padding: 1vw;
    margin-bottom: 1vh;
 }
 
 .photo {
-   width: 40vw;
+   width: 20vw;
 }
 
 .photoMe {
@@ -26,7 +26,7 @@
 
 .headerContent {
    padding-left: 2vw;
-   font-size: 1.8vw;
+   font-size: 1.35vw;
    text-align: justify;
 }
 .headerContent h3 {
@@ -47,8 +47,10 @@
 .dataCont {
    display: flex;
    border: gray solid 2px;
-   border-radius: 1rem;
+   /* border-radius: 1rem; */
    width: 80vw;
+   height: 50vh;
+   overflow: auto;
    padding: 2vw;
    gap: 2vw;
 }
@@ -56,6 +58,7 @@
    display: flex;
    flex-direction: column;
    width: 30%;
+
 }
 
 .listSkills {
@@ -68,7 +71,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 30%;
+   width: 20%;
    margin-bottom: 0.1vh;
    align-items: center;
    border: 1px white solid;
@@ -85,19 +88,19 @@
    width: 70%;
 }
 .skills p {
-   font-size: 1.1vw;
+   font-size: 0.7vw;
 }
 
 .experienceContent {
-   width: 60;
+   width: 70%;
 }
 
 .title {
-   font-size: 2vw;
+   font-size: 1.5vw;
 }
 
 .ulExp {
-   font-size: 1.8vw;
+   font-size: 1.2vw;
    color: aliceblue;
 }
 
@@ -118,6 +121,7 @@
 
 @media (max-width: 767px) {
    .headContent {
+      width: 95vw;
       flex-direction: column;
       align-items: center;
    }
@@ -129,8 +133,11 @@
    }
    .dataCont {
       flex-direction: column-reverse;
+      width: 95vw;
    }
    .listSkills {
+      justify-content: center;
+      align-items: center;
       width: 95vw;
    }
    .skills {
@@ -138,6 +145,9 @@
    }
    .skills p {
       font-size: 2vw;
+   }
+   .experienceContent {
+   width: 95%;
    }
    .title {
       font-size: 3vw;
