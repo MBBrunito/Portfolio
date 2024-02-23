@@ -6,15 +6,15 @@ import { projects } from "../../../profile";
 export default function Project() {
    return (
       <div className="card">
-         {projects.map(({ name, description, date, image }, index) => (
+         {projects.map(({ name, description, date, image, link }, index) => (
             <div key={index}>
                <div className="cardContent">
                   <div className="photoCont">
-                     <Link href="https://youtu.be/OWJFsyPq-LQ" target="_blank">
+                     <Link href={link} target="_blank">
                         <img
                            src={image}
                            alt={name}
-                           title="Ver video del proyecto"
+                           title="Ver proyecto"
                            className="photoProj"
                         />
                      </Link>
@@ -23,11 +23,7 @@ export default function Project() {
                      <h3>{name}</h3>
                      <span>{date}</span>
                      <p>{description}</p>
-                     <Link
-                        href="https://youtu.be/OWJFsyPq-LQ"
-                        target="_blank"
-                        title="Ver video del proyecto"
-                     >
+                     <Link href={link} target="_blank" title="Ver proyecto">
                         Ver más...
                      </Link>
                   </div>

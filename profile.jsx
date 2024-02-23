@@ -190,6 +190,15 @@ export const projects = [
          "Desarrollamos y entregamos exitosamente un sistema integral para el Club ADIP, que incluye una plataforma de administración con funciones de control de usuarios, gestión de noticias y categorías, y un sistema de pagos. Esta solución mejoró la eficiencia de la organización al facilitar la gestión de contenidos, el acceso de usuarios y la recopilación de pagos, contribuyendo así a su misión y objetivos.",
       date: "08/2023 - 09/2023",
       image: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208907/Proyectos/AdipWeb_tz1i9n.jpg",
+      link: "https://youtu.be/OWJFsyPq-LQ",
+   },
+   {
+      name: "Mentalis / Psicología y Desarrollo",
+      description:
+         "Realizamos y entregamos la plataforma web de Mentalis, utilizando tecnologías modernas para garantizar una experiencia eficiente y atractiva como Next.Js, Postgres, CSS. Mis responsabilidades incluyen el diseño, la codificación, la gestión de datos y la optimización del sistema.",
+      date: "12/2023",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1699902288/Mentalis/logo_l8vwnw.png",
+      link: "https://www.mentalis.com.mx",
    },
 ];
 export const contact = [
