@@ -6,7 +6,7 @@
 }
 
 .headContent {
-   width: 90vw;
+   width: 80vw;
    display: flex;
    border: gray solid 2px;
    border-radius: 1rem;
@@ -48,7 +48,7 @@
    display: flex;
    border: gray solid 2px;
    border-radius: 1rem;
-   width: 90vw;
+   width: 80vw;
    padding: 2vw;
    gap: 2vw;
 }

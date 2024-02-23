@@ -203,15 +203,16 @@ export const projects = [
 ];
 export const contact = [
    {
+      red: "Descargar CV",
+      logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1708700685/Proyectos/curriculum-vitae_qr50oj.png",
+      contact:
+         "https://drive.google.com/file/d/1lS4Xjubu9GGZeGZ68RRIF5hLftPD6kJk/view?usp=sharing",
+   },
+   {
       red: "LinkedIn",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208981/Redes%20Sociales/LinkedIn_n4x9si.png",
       contact: "https://www.linkedin.com/in/mbbrunito/",
    },
-   // {
-   //    red: "Gmail",
-   //    logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208981/Redes%20Sociales/gMail_ndgy3f.png",
-   //    contact: "MarcosBrunoDev@gmail.com",
-   // },
    {
       red: "GitHub",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1696728046/skills/GitHub_vbbt8j.png",
