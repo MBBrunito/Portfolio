@@ -50,7 +50,7 @@
    /* border-radius: 1rem; */
    width: 80vw;
    height: 50vh;
-   overflow: auto;
+   overflow: auto ;
    padding: 2vw;
    gap: 2vw;
 }
