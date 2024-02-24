@@ -203,7 +203,7 @@ export const experiencies = [
    {
       title: "Desarrollador Freelance / Empresa EDISON",
       date: "MAR.2000 – AGO.2000",
-      description: "Sistema Administrativo a Medida",
+      description: "Sistema Administrativo a Medida en FoxPro + dBase3",
       items: [
          "Desempeñó funciones administrativas y desarrolló un sistema a medida para la empresa, cubriendo áreas como facturación, control de stock, control bancario y contabilidad.",
       ],
@@ -222,7 +222,7 @@ export const experiencies = [
    {
       title: "Desarrollador Freelance / Martesa Tours (Empresa de Turismo)",
       date: "JUL.1996 – JUN.1998",
-      description: "Sistema Personalizado",
+      description: "Sistema Personalizado Clipper + dBase3",
       items: [
          "Desarrolló un Sistema de Venta de Pasajes, control de Stock, administración, contable y varias funciones adicionales.",
          "Realizó el mantenimiento de la red y equipos.",
@@ -267,7 +267,7 @@ export const experiencies = [
       items: [
          "Desempeñó funciones administrativas en Ducci Construcciones S.R.L.",
          "Colaboró como ayudante del CPN Pomares.",
-         "Implementó un sistema a medida para la gestión de IVA.",
+         "Desarrolló e Implementó un sistema a medida para la gestión de IVA. Clipper + dBase",
          "Realizó labores de mantenimiento de equipos.",
       ],
    },
@@ -276,7 +276,7 @@ export const experiencies = [
       date: "MAY.1993 – DIC.1994",
       description: "Servicios Ad Honorem",
       items: [
-         "Desarrolló ad honorem un sistema administrativo personalizado para el Puesto de Salud Castañeda.",
+         "Desarrolló ad honorem un sistema administrativo personalizado para el Puesto de Salud Castañeda. Clipper + dBase",
          "Realizó tareas de mantenimiento y actualización de equipos informáticos.",
          "Impartió capacitación al personal de manera voluntaria en el uso efectivo del nuevo sistema.",
       ],
@@ -286,7 +286,7 @@ export const experiencies = [
       date: "MAY.1993 – NOV.1995",
       description: "Servicios Particulares",
       items: [
-         "Diseñó y desarrolló un sistema multiempresa de IVA para CPN Cruz, abarcando el mantenimiento y la optimización del mismo.",
+         "Diseñó y desarrolló un sistema multiempresa de IVA para CPN Cruz, abarcando el mantenimiento y la optimización del mismo. Clipper + dBase",
          "Implementó un sistema de facturación personalizado para clientes de CPN Cruz.",
          "Realizó tareas de mantenimiento en equipos e impresoras.",
          "Diseñó diversos formularios para mejorar la eficiencia operativa.",
@@ -295,7 +295,7 @@ export const experiencies = [
    {
       title: "Sistema de Facturación y Stock / Fábrica de Plásticos Jujuy",
       date: "FEB.1993 – SET.1993",
-      description: "Primer Sistema Freelance",
+      description: "Primer Sistema Freelance en Lenguajes Clipper y dBase",
       items: [
          "Desarrolló un sistema integral de facturación y gestión de inventario para la Fábrica de Plásticos Jujuy.",
          "Contribuyó al funcionamiento eficiente de la fábrica mediante la implementación de soluciones personalizadas.",
@@ -305,20 +305,20 @@ export const experiencies = [
 ];
 export const projects = [
    {
-      name: "Proyecto ADIP WEB",
-      description:
-         "Desarrollamos y entregamos exitosamente un sistema integral para el Club ADIP, que incluye una plataforma de administración con funciones de control de usuarios, gestión de noticias y categorías, y un sistema de pagos. Esta solución mejoró la eficiencia de la organización al facilitar la gestión de contenidos, el acceso de usuarios y la recopilación de pagos, contribuyendo así a su misión y objetivos.",
-      date: "08/2023 - 09/2023",
-      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208907/Proyectos/AdipWeb_tz1i9n.jpg",
-      link: "https://youtu.be/OWJFsyPq-LQ",
-   },
-   {
       name: "Mentalis / Psicología y Desarrollo",
       description:
          "Realizamos y entregamos la plataforma web de Mentalis, utilizando tecnologías modernas para garantizar una experiencia eficiente y atractiva como Next.Js, Postgres, CSS. Mis responsabilidades incluyen el diseño, la codificación, la gestión de datos y la optimización del sistema.",
       date: "12/2023",
       image: "https://res.cloudinary.com/daoavxvau/image/upload/v1699902288/Mentalis/logo_l8vwnw.png",
       link: "https://www.mentalis.com.mx",
+   },
+   {
+      name: "Proyecto ADIP WEB",
+      description:
+         "Desarrollamos y entregamos exitosamente un sistema integral para el Club ADIP, que incluye una plataforma de administración con funciones de control de usuarios, gestión de noticias y categorías, y un sistema de pagos. Esta solución mejoró la eficiencia de la organización al facilitar la gestión de contenidos, el acceso de usuarios y la recopilación de pagos, contribuyendo así a su misión y objetivos.",
+      date: "08/2023 - 09/2023",
+      image: "https://res.cloudinary.com/daoavxvau/image/upload/v1697208907/Proyectos/AdipWeb_tz1i9n.jpg",
+      link: "https://youtu.be/OWJFsyPq-LQ",
    },
 ];
 export const contact = [
