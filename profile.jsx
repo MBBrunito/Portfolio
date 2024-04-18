@@ -326,7 +326,7 @@ export const contact = [
       red: "Descargar CV",
       logo: "https://res.cloudinary.com/daoavxvau/image/upload/v1708700685/Proyectos/curriculum-vitae_qr50oj.png",
       contact:
-         "https://drive.google.com/file/d/1lS4Xjubu9GGZeGZ68RRIF5hLftPD6kJk/view?usp=sharing",
+         "https://drive.google.com/file/d/1olJrl-4KHkXc7uboO5YdrD5L4jArjHE_/view?usp=sharing",
    },
    {
       red: "LinkedIn",
